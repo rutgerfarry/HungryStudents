@@ -15,6 +15,19 @@
 		BEB6BB421A17C876003E27D6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEB6BB411A17C876003E27D6 /* Images.xcassets */; };
 		BEB6BB451A17C876003E27D6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEB6BB431A17C876003E27D6 /* LaunchScreen.xib */; };
 		BEB6BB511A17C876003E27D6 /* Hungry_StudentsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB6BB501A17C876003E27D6 /* Hungry_StudentsTests.m */; };
+		BEB6BB5B1A17C8D8003E27D6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB6BB5A1A17C8D8003E27D6 /* AVFoundation.framework */; };
+		BEB6BB5D1A17C8F0003E27D6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB6BB5C1A17C8F0003E27D6 /* CoreData.framework */; };
+		BEB6BB5F1A17C8FB003E27D6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB6BB5E1A17C8FB003E27D6 /* CoreLocation.framework */; };
+		BEB6BB611A17C903003E27D6 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB6BB601A17C903003E27D6 /* CoreText.framework */; };
+		BEB6BB631A17C90C003E27D6 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB6BB621A17C90C003E27D6 /* GLKit.framework */; };
+		BEB6BB651A17C914003E27D6 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB6BB641A17C914003E27D6 /* ImageIO.framework */; };
+		BEB6BB671A17C91F003E27D6 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB6BB661A17C91F003E27D6 /* libc++.dylib */; };
+		BEB6BB691A17C927003E27D6 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB6BB681A17C927003E27D6 /* libicucore.dylib */; };
+		BEB6BB6B1A17C932003E27D6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB6BB6A1A17C932003E27D6 /* libz.dylib */; };
+		BEB6BB6D1A17C93A003E27D6 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB6BB6C1A17C93A003E27D6 /* OpenGLES.framework */; };
+		BEB6BB6F1A17C944003E27D6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB6BB6E1A17C944003E27D6 /* QuartzCore.framework */; };
+		BEB6BB711A17C94B003E27D6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB6BB701A17C94B003E27D6 /* SystemConfiguration.framework */; };
+		BEB6BB731A17C982003E27D6 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB6BB721A17C982003E27D6 /* GoogleMaps.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +55,19 @@
 		BEB6BB4A1A17C876003E27D6 /* Hungry StudentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hungry StudentsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEB6BB4F1A17C876003E27D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEB6BB501A17C876003E27D6 /* Hungry_StudentsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hungry_StudentsTests.m; sourceTree = "<group>"; };
+		BEB6BB5A1A17C8D8003E27D6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		BEB6BB5C1A17C8F0003E27D6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		BEB6BB5E1A17C8FB003E27D6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		BEB6BB601A17C903003E27D6 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		BEB6BB621A17C90C003E27D6 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		BEB6BB641A17C914003E27D6 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		BEB6BB661A17C91F003E27D6 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		BEB6BB681A17C927003E27D6 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		BEB6BB6A1A17C932003E27D6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		BEB6BB6C1A17C93A003E27D6 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		BEB6BB6E1A17C944003E27D6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BEB6BB701A17C94B003E27D6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BEB6BB721A17C982003E27D6 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +75,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEB6BB711A17C94B003E27D6 /* SystemConfiguration.framework in Frameworks */,
+				BEB6BB6F1A17C944003E27D6 /* QuartzCore.framework in Frameworks */,
+				BEB6BB6D1A17C93A003E27D6 /* OpenGLES.framework in Frameworks */,
+				BEB6BB6B1A17C932003E27D6 /* libz.dylib in Frameworks */,
+				BEB6BB691A17C927003E27D6 /* libicucore.dylib in Frameworks */,
+				BEB6BB671A17C91F003E27D6 /* libc++.dylib in Frameworks */,
+				BEB6BB651A17C914003E27D6 /* ImageIO.framework in Frameworks */,
+				BEB6BB631A17C90C003E27D6 /* GLKit.framework in Frameworks */,
+				BEB6BB611A17C903003E27D6 /* CoreText.framework in Frameworks */,
+				BEB6BB731A17C982003E27D6 /* GoogleMaps.framework in Frameworks */,
+				BEB6BB5F1A17C8FB003E27D6 /* CoreLocation.framework in Frameworks */,
+				BEB6BB5D1A17C8F0003E27D6 /* CoreData.framework in Frameworks */,
+				BEB6BB5B1A17C8D8003E27D6 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +104,19 @@
 		BEB6BB251A17C876003E27D6 = {
 			isa = PBXGroup;
 			children = (
+				BEB6BB721A17C982003E27D6 /* GoogleMaps.framework */,
+				BEB6BB701A17C94B003E27D6 /* SystemConfiguration.framework */,
+				BEB6BB6E1A17C944003E27D6 /* QuartzCore.framework */,
+				BEB6BB6C1A17C93A003E27D6 /* OpenGLES.framework */,
+				BEB6BB6A1A17C932003E27D6 /* libz.dylib */,
+				BEB6BB681A17C927003E27D6 /* libicucore.dylib */,
+				BEB6BB661A17C91F003E27D6 /* libc++.dylib */,
+				BEB6BB641A17C914003E27D6 /* ImageIO.framework */,
+				BEB6BB621A17C90C003E27D6 /* GLKit.framework */,
+				BEB6BB601A17C903003E27D6 /* CoreText.framework */,
+				BEB6BB5E1A17C8FB003E27D6 /* CoreLocation.framework */,
+				BEB6BB5C1A17C8F0003E27D6 /* CoreData.framework */,
+				BEB6BB5A1A17C8D8003E27D6 /* AVFoundation.framework */,
 				BEB6BB301A17C876003E27D6 /* Hungry Students */,
 				BEB6BB4D1A17C876003E27D6 /* Hungry StudentsTests */,
 				BEB6BB2F1A17C876003E27D6 /* Products */,
@@ -347,6 +399,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Hungry Students/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -357,6 +413,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Hungry Students/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
