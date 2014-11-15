@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 Rutger Farry. All rights reserved.
 //
 
+#import <Parse/Parse.h>
+#import <GoogleMaps/GoogleMaps.h>
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
@@ -17,6 +19,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    // Parse shit
+    [Parse setApplicationId:@"oMVgjTANAgZkANjRFz4oY2folYHUszv2rwEXTYMz"
+                  clientKey:@"YqrYmzNGWwSuJJ3hlFgGZYEUCTSG2jLKsvlFULVL"];
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    // Google Maps shit
+    [GMSServices provideAPIKey:@"AIzaSyC6LnSSmTeX87g5wqngqkuQXGgAZMkb98Y"];
     return YES;
 }
 

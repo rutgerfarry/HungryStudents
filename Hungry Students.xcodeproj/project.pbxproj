@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE3AD7611A17D3A300646923 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE3AD75F1A17D3A300646923 /* Bolts.framework */; };
+		BE3AD7621A17D3A300646923 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE3AD7601A17D3A300646923 /* Parse.framework */; };
+		BE3AD7641A17D3BA00646923 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE3AD7631A17D3BA00646923 /* AudioToolbox.framework */; };
+		BE3AD7661A17D3C300646923 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE3AD7651A17D3C300646923 /* CFNetwork.framework */; };
+		BE3AD7681A17D3CA00646923 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE3AD7671A17D3CA00646923 /* CoreGraphics.framework */; };
+		BE3AD76A1A17D3ED00646923 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE3AD7691A17D3ED00646923 /* MobileCoreServices.framework */; };
+		BE3AD76C1A17D3FF00646923 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE3AD76B1A17D3FF00646923 /* Security.framework */; };
+		BE3AD76E1A17D40700646923 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE3AD76D1A17D40700646923 /* StoreKit.framework */; };
 		BEB6BB341A17C876003E27D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB6BB331A17C876003E27D6 /* main.m */; };
 		BEB6BB371A17C876003E27D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB6BB361A17C876003E27D6 /* AppDelegate.m */; };
 		BEB6BB3A1A17C876003E27D6 /* Hungry_Students.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BEB6BB381A17C876003E27D6 /* Hungry_Students.xcdatamodeld */; };
@@ -41,6 +49,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BE3AD75F1A17D3A300646923 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		BE3AD7601A17D3A300646923 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		BE3AD7631A17D3BA00646923 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		BE3AD7651A17D3C300646923 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		BE3AD7671A17D3CA00646923 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BE3AD7691A17D3ED00646923 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		BE3AD76B1A17D3FF00646923 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		BE3AD76D1A17D40700646923 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		BEB6BB2E1A17C876003E27D6 /* Hungry Students.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hungry Students.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEB6BB321A17C876003E27D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEB6BB331A17C876003E27D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -76,18 +92,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEB6BB711A17C94B003E27D6 /* SystemConfiguration.framework in Frameworks */,
+				BE3AD76E1A17D40700646923 /* StoreKit.framework in Frameworks */,
+				BE3AD76C1A17D3FF00646923 /* Security.framework in Frameworks */,
 				BEB6BB6F1A17C944003E27D6 /* QuartzCore.framework in Frameworks */,
+				BE3AD76A1A17D3ED00646923 /* MobileCoreServices.framework in Frameworks */,
+				BEB6BB5F1A17C8FB003E27D6 /* CoreLocation.framework in Frameworks */,
+				BE3AD7681A17D3CA00646923 /* CoreGraphics.framework in Frameworks */,
+				BE3AD7661A17D3C300646923 /* CFNetwork.framework in Frameworks */,
+				BE3AD7641A17D3BA00646923 /* AudioToolbox.framework in Frameworks */,
 				BEB6BB6D1A17C93A003E27D6 /* OpenGLES.framework in Frameworks */,
 				BEB6BB6B1A17C932003E27D6 /* libz.dylib in Frameworks */,
+				BE3AD7621A17D3A300646923 /* Parse.framework in Frameworks */,
 				BEB6BB691A17C927003E27D6 /* libicucore.dylib in Frameworks */,
 				BEB6BB671A17C91F003E27D6 /* libc++.dylib in Frameworks */,
 				BEB6BB651A17C914003E27D6 /* ImageIO.framework in Frameworks */,
 				BEB6BB631A17C90C003E27D6 /* GLKit.framework in Frameworks */,
 				BEB6BB611A17C903003E27D6 /* CoreText.framework in Frameworks */,
 				BEB6BB731A17C982003E27D6 /* GoogleMaps.framework in Frameworks */,
-				BEB6BB5F1A17C8FB003E27D6 /* CoreLocation.framework in Frameworks */,
 				BEB6BB5D1A17C8F0003E27D6 /* CoreData.framework in Frameworks */,
 				BEB6BB5B1A17C8D8003E27D6 /* AVFoundation.framework in Frameworks */,
+				BE3AD7611A17D3A300646923 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,15 +125,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BEB6BB251A17C876003E27D6 = {
+		BE3AD76F1A17D42400646923 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BE3AD76D1A17D40700646923 /* StoreKit.framework */,
+				BE3AD76B1A17D3FF00646923 /* Security.framework */,
+				BE3AD7691A17D3ED00646923 /* MobileCoreServices.framework */,
+				BE3AD7671A17D3CA00646923 /* CoreGraphics.framework */,
+				BE3AD7651A17D3C300646923 /* CFNetwork.framework */,
+				BE3AD7631A17D3BA00646923 /* AudioToolbox.framework */,
 				BEB6BB721A17C982003E27D6 /* GoogleMaps.framework */,
 				BEB6BB701A17C94B003E27D6 /* SystemConfiguration.framework */,
 				BEB6BB6E1A17C944003E27D6 /* QuartzCore.framework */,
 				BEB6BB6C1A17C93A003E27D6 /* OpenGLES.framework */,
 				BEB6BB6A1A17C932003E27D6 /* libz.dylib */,
 				BEB6BB681A17C927003E27D6 /* libicucore.dylib */,
+				BE3AD75F1A17D3A300646923 /* Bolts.framework */,
+				BE3AD7601A17D3A300646923 /* Parse.framework */,
 				BEB6BB661A17C91F003E27D6 /* libc++.dylib */,
 				BEB6BB641A17C914003E27D6 /* ImageIO.framework */,
 				BEB6BB621A17C90C003E27D6 /* GLKit.framework */,
@@ -117,9 +149,17 @@
 				BEB6BB5E1A17C8FB003E27D6 /* CoreLocation.framework */,
 				BEB6BB5C1A17C8F0003E27D6 /* CoreData.framework */,
 				BEB6BB5A1A17C8D8003E27D6 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BEB6BB251A17C876003E27D6 = {
+			isa = PBXGroup;
+			children = (
 				BEB6BB301A17C876003E27D6 /* Hungry Students */,
 				BEB6BB4D1A17C876003E27D6 /* Hungry StudentsTests */,
 				BEB6BB2F1A17C876003E27D6 /* Products */,
+				BE3AD76F1A17D42400646923 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -405,6 +445,7 @@
 				);
 				INFOPLIST_FILE = "Hungry Students/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -419,6 +460,7 @@
 				);
 				INFOPLIST_FILE = "Hungry Students/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -476,6 +518,7 @@
 				BEB6BB561A17C876003E27D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BEB6BB571A17C876003E27D6 /* Build configuration list for PBXNativeTarget "Hungry StudentsTests" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +527,7 @@
 				BEB6BB591A17C876003E27D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
