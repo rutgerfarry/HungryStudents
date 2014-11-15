@@ -10,6 +10,7 @@
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
 #import <GoogleMaps/GoogleMaps.h>
+#import "AnnouncementDetailViewController.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet GMSMapView *mapView;
@@ -67,12 +68,11 @@
 }
 
 - (BOOL)mapView:(GMSMapView *)mapView didTapMarker:(GMSMarker *)marker {
-    UIViewController *destination = [UIViewController new];
+    AnnouncementDetailViewController *destination = [[AnnouncementDetailViewController alloc]
+                                                     initWithNibName:@"AnnouncementDetailViewController" bundle:[NSBundle mainBundle]];
     
-    NSDictionary *data = marker.userData;
-    UIImage *photo = data[@"Photo"];
+    destination.userData = marker.userData;
     
-    destination.view = [[UIImageView alloc] initWithImage:photo];
     [self.navigationController pushViewController:destination animated:true];
     
     return YES;

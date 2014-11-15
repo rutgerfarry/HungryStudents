@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5C92AC441A17DAB400A1C208 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5C92AC431A17DAB400A1C208 /* GoogleMaps.bundle */; };
-		5C92AC461A17FFA300A1C208 /* AnnouncementDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C92AC451A17FFA300A1C208 /* AnnouncementDetailView.xib */; };
+		5C92AC4B1A18103D00A1C208 /* AnnouncementDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C92AC4A1A18103D00A1C208 /* AnnouncementDetailViewController.m */; };
+		5C92AC4D1A18122500A1C208 /* AnnouncementDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C92AC4C1A18122500A1C208 /* AnnouncementDetailViewController.xib */; };
 		BE3AD7611A17D3A300646923 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE3AD75F1A17D3A300646923 /* Bolts.framework */; };
 		BE3AD7621A17D3A300646923 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE3AD7601A17D3A300646923 /* Parse.framework */; };
 		BE3AD7641A17D3BA00646923 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE3AD7631A17D3BA00646923 /* AudioToolbox.framework */; };
@@ -53,7 +54,9 @@
 
 /* Begin PBXFileReference section */
 		5C92AC431A17DAB400A1C208 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
-		5C92AC451A17FFA300A1C208 /* AnnouncementDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnnouncementDetailView.xib; sourceTree = "<group>"; };
+		5C92AC491A18103D00A1C208 /* AnnouncementDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnouncementDetailViewController.h; sourceTree = "<group>"; };
+		5C92AC4A1A18103D00A1C208 /* AnnouncementDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnouncementDetailViewController.m; sourceTree = "<group>"; };
+		5C92AC4C1A18122500A1C208 /* AnnouncementDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnnouncementDetailViewController.xib; sourceTree = "<group>"; };
 		BE3AD75F1A17D3A300646923 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		BE3AD7601A17D3A300646923 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		BE3AD7631A17D3BA00646923 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -194,7 +197,9 @@
 				BEB6BB431A17C876003E27D6 /* LaunchScreen.xib */,
 				BEB6BB381A17C876003E27D6 /* Hungry_Students.xcdatamodeld */,
 				BEB6BB311A17C876003E27D6 /* Supporting Files */,
-				5C92AC451A17FFA300A1C208 /* AnnouncementDetailView.xib */,
+				5C92AC491A18103D00A1C208 /* AnnouncementDetailViewController.h */,
+				5C92AC4A1A18103D00A1C208 /* AnnouncementDetailViewController.m */,
+				5C92AC4C1A18122500A1C208 /* AnnouncementDetailViewController.xib */,
 			);
 			path = "Hungry Students";
 			sourceTree = "<group>";
@@ -307,8 +312,8 @@
 			files = (
 				BEB6BB401A17C876003E27D6 /* Main.storyboard in Resources */,
 				BEB6BB451A17C876003E27D6 /* LaunchScreen.xib in Resources */,
-				5C92AC461A17FFA300A1C208 /* AnnouncementDetailView.xib in Resources */,
 				BEB6BB421A17C876003E27D6 /* Images.xcassets in Resources */,
+				5C92AC4D1A18122500A1C208 /* AnnouncementDetailViewController.xib in Resources */,
 				5C92AC441A17DAB400A1C208 /* GoogleMaps.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,6 +332,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C92AC4B1A18103D00A1C208 /* AnnouncementDetailViewController.m in Sources */,
 				BEB6BB371A17C876003E27D6 /* AppDelegate.m in Sources */,
 				BEB6BB3A1A17C876003E27D6 /* Hungry_Students.xcdatamodeld in Sources */,
 				BEB6BB3D1A17C876003E27D6 /* ViewController.m in Sources */,
@@ -454,6 +460,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -462,6 +469,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -470,6 +478,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
