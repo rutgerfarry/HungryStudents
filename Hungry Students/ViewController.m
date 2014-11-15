@@ -11,6 +11,7 @@
 #import <GoogleMaps/GoogleMaps.h>
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet GMSMapView *mapView;
 
 @end
 
@@ -18,6 +19,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self.mapView setCamera:[GMSCameraPosition cameraWithLatitude:44.56802
+                                                            longitude:-123.27926
+                                                             zoom:16]];
+    
+    GMSMarker *marker = [GMSMarker markerWithPosition:CLLocationCoordinate2DMake(44.56802, -123.27926)];
+    marker.title = @"Hello World";
+    marker.map = self.mapView;
     // Do any additional setup after loading the view, typically from a nib.
 }
 
