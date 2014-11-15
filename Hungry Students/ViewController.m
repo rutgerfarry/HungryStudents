@@ -35,26 +35,35 @@
     [super viewWillAppear:animated];
     
     PFQuery *query = [PFQuery queryWithClassName:@"Announcement"];
-        
+    
     [query findObjectsInBackgroundWithBlock:^(NSArray *announcements, NSError *error) {
+        if (error) {
+            NSLog(@"%@", error.description);
+            return;
+        }
+        
         for (PFObject *announcement in announcements) {
-            [self.mapMarkers addObject:[self markerWithAnnouncement:announcement]];
+            [self addMarkerWithAnnouncement:announcement];
         }
     }];
 }
 
-- (GMSMarker *)markerWithAnnouncement:(PFObject *)announcement {
-    
-    PFGeoPoint *location = announcement[@"Location"];
-    GMSMarker *result = [GMSMarker markerWithPosition:
-                         CLLocationCoordinate2DMake(location.latitude, location.longitude)];
-    
-    NSData *imageData = [announcement[@"Photo"] getData];
-    UIImage *photo = [UIImage imageWithData:imageData];
-    result.userData = @{ @"Photo" : photo, @"Description" : announcement[@"Description"] };
-    result.map = self.mapView;
-    
-    return result;
+- (void)addMarkerWithAnnouncement:(PFObject *)announcement {
+    [announcement[@"Photo"] getDataInBackgroundWithBlock:^(NSData *data, NSError *error) {
+        if (error) {
+            NSLog(@"%@", error.description);
+            return;
+        }
+        PFGeoPoint *location = announcement[@"Location"];
+        GMSMarker *result = [GMSMarker markerWithPosition:
+                             CLLocationCoordinate2DMake(location.latitude, location.longitude)];
+        
+        UIImage *photo = [UIImage imageWithData:data];
+        result.userData = @{ @"Photo" : photo, @"Description" : announcement[@"Description"] };
+        result.map = self.mapView;
+        
+        [self.mapMarkers addObject:result];
+    }];
 }
 
 - (BOOL)mapView:(GMSMapView *)mapView didTapMarker:(GMSMarker *)marker {
