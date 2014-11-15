@@ -20,8 +20,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     // Parse shit
-    [Parse setApplicationId:@"oMVgjTANAgZkANjRFz4oY2folYHUszv2rwEXTYMz"
-                  clientKey:@"YqrYmzNGWwSuJJ3hlFgGZYEUCTSG2jLKsvlFULVL"];
+    [Parse setApplicationId:@"tAwWLUCNlJUGtT89qYEhPLb9bRKRAyPhuNdIQLoj"
+                  clientKey:@"MSBimvPVA14bYSuBQAOO51wBkswmPPDofLC5iiW7"];
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     // Google Maps shit
     [GMSServices provideAPIKey:@"AIzaSyC6LnSSmTeX87g5wqngqkuQXGgAZMkb98Y"];
