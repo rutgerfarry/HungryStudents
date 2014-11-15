@@ -52,24 +52,33 @@
             </objects>
             <point key="canvasLocation" x="1085" y="293"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Item View Controller-->
         <scene sceneID="atf-09-eca">
             <objects>
-                <viewController id="VcI-eZ-IrG" sceneMemberID="viewController">
+                <viewController id="VcI-eZ-IrG" customClass="AddItemViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XCn-DS-ndU"/>
                         <viewControllerLayoutGuide type="bottom" id="EKX-En-mCV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="nJb-m9-zaB">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4mC-qG-T2k">
+                                <rect key="frame" x="0.0" y="90" width="375" height="418"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="2mn-5v-sAd"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="topImage" destination="4mC-qG-T2k" id="Vmv-le-3x7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wvj-Xi-bme" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2610" y="687"/>
+            <point key="canvasLocation" x="2609.5" y="686.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qP7-Xh-xqV">
