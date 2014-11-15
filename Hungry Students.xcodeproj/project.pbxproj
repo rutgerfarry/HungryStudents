@@ -17,6 +17,7 @@
 		BE3AD76A1A17D3ED00646923 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE3AD7691A17D3ED00646923 /* MobileCoreServices.framework */; };
 		BE3AD76C1A17D3FF00646923 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE3AD76B1A17D3FF00646923 /* Security.framework */; };
 		BE3AD76E1A17D40700646923 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE3AD76D1A17D40700646923 /* StoreKit.framework */; };
+		BE3AD7721A17EA3E00646923 /* AddItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE3AD7711A17EA3E00646923 /* AddItemViewController.m */; };
 		BEB6BB341A17C876003E27D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB6BB331A17C876003E27D6 /* main.m */; };
 		BEB6BB371A17C876003E27D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB6BB361A17C876003E27D6 /* AppDelegate.m */; };
 		BEB6BB3A1A17C876003E27D6 /* Hungry_Students.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BEB6BB381A17C876003E27D6 /* Hungry_Students.xcdatamodeld */; };
@@ -61,6 +62,8 @@
 		BE3AD7691A17D3ED00646923 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		BE3AD76B1A17D3FF00646923 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		BE3AD76D1A17D40700646923 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		BE3AD7701A17EA3E00646923 /* AddItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddItemViewController.h; sourceTree = "<group>"; };
+		BE3AD7711A17EA3E00646923 /* AddItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddItemViewController.m; sourceTree = "<group>"; };
 		BEB6BB2E1A17C876003E27D6 /* Hungry Students.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hungry Students.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEB6BB321A17C876003E27D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEB6BB331A17C876003E27D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -185,6 +188,8 @@
 				BEB6BB3B1A17C876003E27D6 /* ViewController.h */,
 				BEB6BB3C1A17C876003E27D6 /* ViewController.m */,
 				BEB6BB3E1A17C876003E27D6 /* Main.storyboard */,
+				BE3AD7701A17EA3E00646923 /* AddItemViewController.h */,
+				BE3AD7711A17EA3E00646923 /* AddItemViewController.m */,
 				BEB6BB411A17C876003E27D6 /* Images.xcassets */,
 				BEB6BB431A17C876003E27D6 /* LaunchScreen.xib */,
 				BEB6BB381A17C876003E27D6 /* Hungry_Students.xcdatamodeld */,
@@ -325,6 +330,7 @@
 				BEB6BB371A17C876003E27D6 /* AppDelegate.m in Sources */,
 				BEB6BB3A1A17C876003E27D6 /* Hungry_Students.xcdatamodeld in Sources */,
 				BEB6BB3D1A17C876003E27D6 /* ViewController.m in Sources */,
+				BE3AD7721A17EA3E00646923 /* AddItemViewController.m in Sources */,
 				BEB6BB341A17C876003E27D6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,6 +453,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -462,6 +469,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
