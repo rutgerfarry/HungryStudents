@@ -35,6 +35,7 @@
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <segue destination="hbK-fv-JRw" kind="show" id="ABg-MH-8yd"/>
+                                <outlet property="mapView" destination="uWE-qc-tii" id="9NF-w9-m4H"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
