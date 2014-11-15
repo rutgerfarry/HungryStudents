@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C92AC441A17DAB400A1C208 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5C92AC431A17DAB400A1C208 /* GoogleMaps.bundle */; };
 		BE3AD7611A17D3A300646923 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE3AD75F1A17D3A300646923 /* Bolts.framework */; };
 		BE3AD7621A17D3A300646923 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE3AD7601A17D3A300646923 /* Parse.framework */; };
 		BE3AD7641A17D3BA00646923 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE3AD7631A17D3BA00646923 /* AudioToolbox.framework */; };
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5C92AC431A17DAB400A1C208 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		BE3AD75F1A17D3A300646923 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		BE3AD7601A17D3A300646923 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		BE3AD7631A17D3BA00646923 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -128,6 +130,7 @@
 		BE3AD76F1A17D42400646923 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5C92AC431A17DAB400A1C208 /* GoogleMaps.bundle */,
 				BE3AD76D1A17D40700646923 /* StoreKit.framework */,
 				BE3AD76B1A17D3FF00646923 /* Security.framework */,
 				BE3AD7691A17D3ED00646923 /* MobileCoreServices.framework */,
@@ -297,6 +300,7 @@
 				BEB6BB401A17C876003E27D6 /* Main.storyboard in Resources */,
 				BEB6BB451A17C876003E27D6 /* LaunchScreen.xib in Resources */,
 				BEB6BB421A17C876003E27D6 /* Images.xcassets in Resources */,
+				5C92AC441A17DAB400A1C208 /* GoogleMaps.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

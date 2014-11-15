@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <Parse/Parse.h>
+#import <GoogleMaps/GoogleMaps.h>
 
 @interface ViewController ()
 
