@@ -29,7 +29,9 @@
     [self.mapView setCamera:[GMSCameraPosition cameraWithLatitude:44.56802
                                                             longitude:-123.27926
                                                              zoom:16]];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.mapView.settings.rotateGestures = NO;
+    //self.navigationItem.title = @"Hungry Students";
+
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -62,6 +64,7 @@
         UIImage *photo = [UIImage imageWithData:data];
         result.userData = @{ @"Photo" : photo, @"Description" : announcement[@"Description"] };
         result.map = self.mapView;
+        result.icon = [UIImage imageNamed:@"pizzapin"];
         
         [self.mapMarkers addObject:result];
     }];

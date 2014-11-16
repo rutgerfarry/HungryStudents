@@ -25,6 +25,8 @@
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     // Google Maps shit
     [GMSServices provideAPIKey:@"AIzaSyC6LnSSmTeX87g5wqngqkuQXGgAZMkb98Y"];
+    
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"navbar"] forBarMetrics:UIBarMetricsDefault];
     return YES;
 }
 

@@ -14,8 +14,7 @@
 
 @property (strong, nonatomic) PFObject *foodObject;
 @property (strong, nonatomic) IBOutlet UIImageView *topImage;
-@property (strong, nonatomic) IBOutlet UITextField *bottomTextField;
-
+@property (strong, nonatomic) UITextField *bottomTextField;
 
 @end
 
@@ -25,6 +24,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self takePicture];
+    CGRect bottomTextFrame = CGRectMake(0,
+                                        308,
+                                        [UIScreen mainScreen].bounds.size.width,
+                                        200);
+    self.bottomTextField = [[UITextField alloc] initWithFrame:bottomTextFrame];
+    self.bottomTextField.placeholder = @"Enter your description here...";
+    [self.view addSubview:self.bottomTextField];
     self.bottomTextField.delegate = self;
 }
 
@@ -85,11 +91,12 @@
 
 }
 
-- (BOOL) textFieldShouldReturn:(UITextField *)textField
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     [textField resignFirstResponder];
     return YES;
 }
+
 
 #pragma mark - Image Picker Controller delegate
 
@@ -123,8 +130,6 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info
     self.topImage.image = image;
 }
 
-
-
 - (UIImage *)resizeImage:(UIImage *)image toWidth:(float)width andHeight:(float)height
 {
     CGSize newSize = CGSizeMake(width, height);
@@ -146,5 +151,6 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info
     // Pass the selected object to the new view controller.
 }
 */
+
 
 @end
