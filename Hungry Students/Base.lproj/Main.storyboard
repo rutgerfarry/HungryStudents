@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AyF-Vz-P1d">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B23" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AyF-Vz-P1d">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -64,15 +65,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4mC-qG-T2k">
-                                <rect key="frame" x="0.0" y="90" width="375" height="418"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4mC-qG-T2k">
+                                <rect key="frame" x="0.0" y="64" width="375" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="4mC-qG-T2k" secondAttribute="height" multiplier="1:1" id="q5h-em-lUQ"/>
+                                </constraints>
                             </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" placeholder="Write description here..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9kU-as-iGp">
+                                <rect key="frame" x="0.0" y="447" width="375" height="155"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFC-MB-dkC">
+                                <rect key="frame" x="0.0" y="602" width="375" height="65"/>
+                                <color key="backgroundColor" red="0.64705882349999999" green="0.1764705882" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                <state key="normal" title="Post">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="postButtonPushed" destination="VcI-eZ-IrG" eventType="touchUpInside" id="nQ7-T5-cbG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4mC-qG-T2k" firstAttribute="leading" secondItem="nJb-m9-zaB" secondAttribute="leadingMargin" constant="-16" id="FoB-vL-Qeo"/>
+                            <constraint firstItem="4mC-qG-T2k" firstAttribute="top" secondItem="XCn-DS-ndU" secondAttribute="bottom" id="JZF-Or-DFl"/>
+                            <constraint firstItem="4mC-qG-T2k" firstAttribute="top" secondItem="XCn-DS-ndU" secondAttribute="bottom" constant="26" id="dFo-RE-9gm"/>
+                            <constraint firstAttribute="width" secondItem="4mC-qG-T2k" secondAttribute="width" id="mqn-RK-G2z"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="dFo-RE-9gm"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="2mn-5v-sAd"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="bottomTextField" destination="9kU-as-iGp" id="7OH-qM-pdd"/>
                         <outlet property="topImage" destination="4mC-qG-T2k" id="Vmv-le-3x7"/>
                     </connections>
                 </viewController>

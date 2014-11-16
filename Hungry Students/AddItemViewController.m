@@ -14,6 +14,7 @@
 
 @property (strong, nonatomic) PFObject *foodObject;
 @property (strong, nonatomic) IBOutlet UIImageView *topImage;
+@property (strong, nonatomic) IBOutlet UITextField *bottomTextField;
 
 
 @end
@@ -24,6 +25,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self takePicture];
+    self.bottomTextField.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -41,6 +43,52 @@
         [self.imagePicker setAllowsEditing:NO];
         [self presentViewController:self.imagePicker animated:NO completion:nil];
     }
+}
+- (IBAction)postButtonPushed {
+    NSLog(@"1st level");
+    UIImage *newImage = [self resizeImage:self.image toWidth:750 andHeight:1000];
+    NSData *imageData = UIImagePNGRepresentation(newImage);
+    PFFile *imageFile = [PFFile fileWithName:@"image.png" data:imageData];
+    
+    [PFGeoPoint geoPointForCurrentLocationInBackground:^(PFGeoPoint *geoPoint, NSError *error) {
+        if (!error) {
+            NSLog(@"2nd level no error");
+            PFObject *newObject = [PFObject objectWithClassName:@"Announcement"];
+            newObject[@"Description"] = self.bottomTextField.text;
+            newObject[@"Location"] = geoPoint;
+            newObject[@"Photo"] = imageFile;
+            [newObject saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                if (error)
+                {
+                    UIAlertController *errorAlert = [UIAlertController alertControllerWithTitle:@"Error"
+                                                                                        message:@"Uhh so an error occured. You probably done something wrong."
+                                                                                 preferredStyle:UIAlertControllerStyleAlert];
+                    [self presentViewController:errorAlert
+                                       animated:YES
+                                     completion:nil];
+                }
+            }];
+        }
+        else
+        {
+            NSLog(@"2nd error");
+
+            UIAlertController *errorAlert = [UIAlertController alertControllerWithTitle:@"Error"
+                                                                                message:@"Uhh so an error occured. You probably done something wrong."
+                                                                         preferredStyle:UIAlertControllerStyleAlert];
+            [self presentViewController:errorAlert
+                               animated:YES
+                             completion:nil];
+        }
+    }];
+    NSLog(@"3rd level");
+
+}
+
+- (BOOL) textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
 }
 
 #pragma mark - Image Picker Controller delegate
@@ -74,6 +122,21 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
     self.topImage.image = image;
 }
+
+
+
+- (UIImage *)resizeImage:(UIImage *)image toWidth:(float)width andHeight:(float)height
+{
+    CGSize newSize = CGSizeMake(width, height);
+    CGRect newRect = CGRectMake(0, 0, width, height);
+    UIGraphicsBeginImageContext(newSize);
+    [self.image drawInRect:newRect];
+    
+    UIImage *resizedImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return resizedImage;
+}
+
 /*
 #pragma mark - Navigation
 

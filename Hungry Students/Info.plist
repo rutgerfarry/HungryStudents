@@ -22,6 +22,8 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Hungry Students uses GPS technology, allowing you to propel your mouth to free food.</string>
 	<key>UILaunchStoryboardName</key>
 	<string>lau</string>
 	<key>UIMainStoryboardFile</key>
@@ -29,12 +31,12 @@
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
+		<string>location-services</string>
+		<string>gps</string>
 	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 </dict>
 </plist>

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AddItemViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface AddItemViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate>
 
 @property (strong, nonatomic)UIImagePickerController *imagePicker;
 @property (strong, nonatomic)UIImage *image;
