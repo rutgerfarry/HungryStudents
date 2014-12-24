@@ -14,7 +14,7 @@
 
 @property (strong, nonatomic) PFObject *foodObject;
 @property (strong, nonatomic) IBOutlet UIImageView *topImage;
-@property (strong, nonatomic) UITextField *bottomTextField;
+@property (strong, nonatomic) IBOutlet UITextField *bottomTextField;
 
 @end
 
@@ -24,14 +24,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self takePicture];
-    CGRect bottomTextFrame = CGRectMake(0,
-                                        308,
-                                        [UIScreen mainScreen].bounds.size.width,
-                                        200);
-    self.bottomTextField = [[UITextField alloc] initWithFrame:bottomTextFrame];
-    self.bottomTextField.placeholder = @"Enter your description here...";
-    [self.view addSubview:self.bottomTextField];
-    self.bottomTextField.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -58,7 +50,6 @@
     
     [PFGeoPoint geoPointForCurrentLocationInBackground:^(PFGeoPoint *geoPoint, NSError *error) {
         if (!error) {
-            NSLog(@"2nd level no error");
             PFObject *newObject = [PFObject objectWithClassName:@"Announcement"];
             newObject[@"Description"] = self.bottomTextField.text;
             newObject[@"Location"] = geoPoint;
@@ -77,8 +68,6 @@
         }
         else
         {
-            NSLog(@"2nd error");
-
             UIAlertController *errorAlert = [UIAlertController alertControllerWithTitle:@"Error"
                                                                                 message:@"Uhh so an error occured. You probably done something wrong."
                                                                          preferredStyle:UIAlertControllerStyleAlert];
@@ -87,15 +76,8 @@
                              completion:nil];
         }
     }];
-    NSLog(@"3rd level");
-
 }
 
-- (BOOL)textFieldShouldReturn:(UITextField *)textField
-{
-    [textField resignFirstResponder];
-    return YES;
-}
 
 
 #pragma mark - Image Picker Controller delegate

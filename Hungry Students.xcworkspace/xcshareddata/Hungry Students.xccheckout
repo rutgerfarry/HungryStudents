@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>643B0EFC-3338-46A0-97AB-499632CA14E1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Hungry Students</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9F5D6D8F0D078C60A0616E420EB39B76EF032D8B</key>
+		<string>https://github.com/rutgerfarry/HungryStudents.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Hungry Students.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9F5D6D8F0D078C60A0616E420EB39B76EF032D8B</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/rutgerfarry/HungryStudents.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9F5D6D8F0D078C60A0616E420EB39B76EF032D8B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9F5D6D8F0D078C60A0616E420EB39B76EF032D8B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>HungryStudents</string>
+		</dict>
+	</array>
+</dict>
+</plist>

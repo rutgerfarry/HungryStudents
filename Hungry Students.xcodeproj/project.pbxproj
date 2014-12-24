@@ -10,6 +10,7 @@
 		5C92AC441A17DAB400A1C208 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5C92AC431A17DAB400A1C208 /* GoogleMaps.bundle */; };
 		5C92AC4B1A18103D00A1C208 /* AnnouncementDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C92AC4A1A18103D00A1C208 /* AnnouncementDetailViewController.m */; };
 		5C92AC4D1A18122500A1C208 /* AnnouncementDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C92AC4C1A18122500A1C208 /* AnnouncementDetailViewController.xib */; };
+		BE2A3EBA1A2802AD00059B98 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = BE2A3EB91A2802AD00059B98 /* Podfile */; };
 		BE3AD7611A17D3A300646923 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE3AD75F1A17D3A300646923 /* Bolts.framework */; };
 		BE3AD7621A17D3A300646923 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE3AD7601A17D3A300646923 /* Parse.framework */; };
 		BE3AD7641A17D3BA00646923 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE3AD7631A17D3BA00646923 /* AudioToolbox.framework */; };
@@ -41,6 +42,7 @@
 		BEB6BB6F1A17C944003E27D6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB6BB6E1A17C944003E27D6 /* QuartzCore.framework */; };
 		BEB6BB711A17C94B003E27D6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB6BB701A17C94B003E27D6 /* SystemConfiguration.framework */; };
 		BEB6BB731A17C982003E27D6 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB6BB721A17C982003E27D6 /* GoogleMaps.framework */; };
+		E85C3DD09456D29EAB8BED91 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B68B7EDD13A41C3F67407041 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,10 +56,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C1F02CAA2314D83C7EAECEB /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		5C92AC431A17DAB400A1C208 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		5C92AC491A18103D00A1C208 /* AnnouncementDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnouncementDetailViewController.h; sourceTree = "<group>"; };
 		5C92AC4A1A18103D00A1C208 /* AnnouncementDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnouncementDetailViewController.m; sourceTree = "<group>"; };
 		5C92AC4C1A18122500A1C208 /* AnnouncementDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnnouncementDetailViewController.xib; sourceTree = "<group>"; };
+		9DF6DC334D9BD1B1537899FF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B68B7EDD13A41C3F67407041 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE2A3EB91A2802AD00059B98 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		BE3AD75F1A17D3A300646923 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		BE3AD7601A17D3A300646923 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		BE3AD7631A17D3BA00646923 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -125,6 +131,7 @@
 				BEB6BB5D1A17C8F0003E27D6 /* CoreData.framework in Frameworks */,
 				BEB6BB5B1A17C8D8003E27D6 /* AVFoundation.framework in Frameworks */,
 				BE3AD7611A17D3A300646923 /* Bolts.framework in Frameworks */,
+				E85C3DD09456D29EAB8BED91 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +145,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9BE51991613FC3DB8645B4BF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C1F02CAA2314D83C7EAECEB /* Pods.debug.xcconfig */,
+				9DF6DC334D9BD1B1537899FF /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BE3AD76F1A17D42400646923 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +179,7 @@
 				BEB6BB5E1A17C8FB003E27D6 /* CoreLocation.framework */,
 				BEB6BB5C1A17C8F0003E27D6 /* CoreData.framework */,
 				BEB6BB5A1A17C8D8003E27D6 /* AVFoundation.framework */,
+				B68B7EDD13A41C3F67407041 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -170,10 +187,12 @@
 		BEB6BB251A17C876003E27D6 = {
 			isa = PBXGroup;
 			children = (
+				BE2A3EB91A2802AD00059B98 /* Podfile */,
 				BEB6BB301A17C876003E27D6 /* Hungry Students */,
 				BEB6BB4D1A17C876003E27D6 /* Hungry StudentsTests */,
 				BEB6BB2F1A17C876003E27D6 /* Products */,
 				BE3AD76F1A17D42400646923 /* Frameworks */,
+				9BE51991613FC3DB8645B4BF /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -242,9 +261,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BEB6BB541A17C876003E27D6 /* Build configuration list for PBXNativeTarget "Hungry Students" */;
 			buildPhases = (
+				2307D8029610DCC0FA0302F0 /* Check Pods Manifest.lock */,
 				BEB6BB2A1A17C876003E27D6 /* Sources */,
 				BEB6BB2B1A17C876003E27D6 /* Frameworks */,
 				BEB6BB2C1A17C876003E27D6 /* Resources */,
+				F76172D3859A92270E0359D5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -315,6 +336,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE2A3EBA1A2802AD00059B98 /* Podfile in Resources */,
 				BEB6BB401A17C876003E27D6 /* Main.storyboard in Resources */,
 				BEB6BB451A17C876003E27D6 /* LaunchScreen.xib in Resources */,
 				BEB6BB421A17C876003E27D6 /* Images.xcassets in Resources */,
@@ -331,6 +353,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2307D8029610DCC0FA0302F0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F76172D3859A92270E0359D5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BEB6BB2A1A17C876003E27D6 /* Sources */ = {
@@ -463,6 +518,7 @@
 		};
 		BEB6BB551A17C876003E27D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C1F02CAA2314D83C7EAECEB /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -471,6 +527,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Hungry Students/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -480,6 +537,7 @@
 		};
 		BEB6BB561A17C876003E27D6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DF6DC334D9BD1B1537899FF /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -488,6 +546,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Hungry Students/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
